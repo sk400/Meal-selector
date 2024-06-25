@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meal Recipe Selector</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Meal ideas</h1>
+    </header>
+    <main>
+      <section id="preferences">
+        <h2>Find Your Recipe</h2>
+        <form id="preferences-form">
+          <label for="diet">Dietary Restrictions:</label>
+          <input
+            type="text"
+            id="diet"
+            name="diet"
+            placeholder="e.g., vegan, gluten-free"
+            autocomplete="off"
+          />
+
+          <label for="cuisine">Cuisine Type:</label>
+          <select id="cuisine" name="cuisine">
+            <option value="any">Any</option>
+            <option value="italian">Italian</option>
+            <option value="mexican">Mexican</option>
+            <option value="indian">Indian</option>
+            <option value="chinese">Chinese</option>
+            <option value="japanese">Japanese</option>
+            <option value="mediterranean">Mediterranean</option>
+            <option value="thai">Thai</option>
+            <option value="british">British</option>
+            <option value="american">American</option>
+            <option value="middle-eastern">Middle Eastern</option>
+            <option value="greek">Greek</option>
+          </select>
+
+          <button type="submit">Get Recipe</button>
+        </form>
+      </section>
+      <section id="recipe-result">
+        <h2>Your Recipe</h2>
+        <div id="recipe-details">
+          <!-- Recipe details will be inserted here by JavaScript -->
+        </div>
+      </section>
+    </main>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
